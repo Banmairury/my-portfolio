@@ -6,7 +6,7 @@ import line from "../images/line.png";
 
 const ContactMe = () => {
   return (
-    <div className="h-fit bg-gradient-to-r from-black from-20% via-zine-800 via-80% to-gray-700 to-100% pb-10">
+    <div id="contact-me" className="scroll-smooth h-fit bg-gradient-to-r from-black from-20% via-zine-800 via-80% to-gray-700 to-100% pb-10">
       <h2 className=" text-lime-400 text-4xl ">ContactME </h2>
       <div className="flex justify-around">
         <div className="flex flex-col justify-end">

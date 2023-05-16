@@ -1,5 +1,7 @@
 import ImgProfile from "../images/TeerapongProfile.png"
 
+
+
 const Profile = () => {
   return (
     <div className="bg-gradient-to-r from-black from-20% via-zine-900 via-80% to-gray-800 to-100% grid grid-cols-2 h-96 text-white">
@@ -10,7 +12,7 @@ const Profile = () => {
         <p>Career switcher</p>
         <p>I am learner  generation thailand #jsd4  </p>
       </div>
-      <div className=" text-white grid justify-items-center">
+      <div className=" text-white grid justify-items-center ">
         <img src={ImgProfile} className="w-60"/>
       </div>
       <div className="">

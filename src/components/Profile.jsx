@@ -8,7 +8,7 @@ import nodejsIcon from "../images/nodejs.png";
 
 const Profile = () => {
   return (
-    <div className=" p-10 bg-gradient-to-r from-black from-20% via-zine-900 via-80% to-gray-800 to-100% grid grid-cols-2 h-96 text-white">
+    <div className=" p-10 bg-gradient-to-r from-black from-20% via-zine-900 via-80% to-gray-800 to-100% grid grid-cols-2 h-fit text-white">
       <div className="">
         <h2 className="">Hello, I am</h2>
 

@@ -6,13 +6,13 @@ const Navbar = () => {
     <nav className="bg-gradient-to-r from-black from-20% via-zine-900 via-80% to-gray-800 to-100% flex justify-between p-5 text-white">
       <h1 className=" text-4xl text-zinc-400">I'M Beer</h1>
       <div className="flex items-center justify-center gap-7">
-        <a href="#" className="text-xl font-medium hover:text-sky-500 ">
-          About
+        <a href="#experience-me" className="text-xl font-medium hover:text-sky-500 ">
+        Experience
         </a>
-        <a href="#" className="text-xl font-medium hover:text-sky-500 ">
+        <a href="#skill-me" className="text-xl font-medium hover:text-sky-500 ">
           Skill
         </a>
-        <a href="#" className="text-xl font-medium hover:text-sky-500 ">
+        <a href="#project" className="text-xl font-medium hover:text-sky-500 ">
           Project
         </a>
       </div>

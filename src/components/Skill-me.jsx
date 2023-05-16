@@ -9,9 +9,9 @@ import mongodb from "../images/mongodb.png"
 
 const SkillMe = () => {
   return (
-    <>
-    <h2 className=" text-lime-400 text-4xl bg-gradient-to-r from-black from-20% via-gray-950 via-80% to-gray-900 to-100%">Skills</h2>
-      <div className="h-40 bg-gradient-to-r from-black from-20% via-gray-950 via-80% to-gray-900 to-100% flex justify-center items-center gap-10">
+    <div id="skill-me" className="bg-gradient-to-r from-black from-20% via-gray-950 via-80% to-gray-900 to-100% p-10">
+    <h2 className=" text-lime-400 text-4xl ">Skills</h2>
+      <div className=" h-40  flex justify-center items-center gap-10">
       <img className=" h-20 w-20" src={figma}/>
       <img className=" h-20 w-20" src={html5}/>
       <img className=" h-20 w-20" src={css3}/>
@@ -22,7 +22,7 @@ const SkillMe = () => {
       <img className=" h-20 w-20 rounded-lg" src={mongodb}/>
 
     </div>
-    </>
+    </div>
     
   );
 };

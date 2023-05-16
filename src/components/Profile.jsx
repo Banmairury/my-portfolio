@@ -1,25 +1,51 @@
-import ImgProfile from "../images/TeerapongProfile.png"
-
-
+import ImgProfile from "../images/TeerapongProfile.png";
+import "../styles/Profile.css";
+import { FcInTransit, FcNews, FcDebt, FcManager } from "react-icons/fc";
+import reactIcon from "../images/react.png";
+import cssIcon from "../images/css3.png";
+import javascriptIcon from "../images/javascript.png";
+import nodejsIcon from "../images/nodejs.png";
 
 const Profile = () => {
   return (
-    <div className="bg-gradient-to-r from-black from-20% via-zine-900 via-80% to-gray-800 to-100% grid grid-cols-2 h-96 text-white">
+    <div className=" p-10 bg-gradient-to-r from-black from-20% via-zine-900 via-80% to-gray-800 to-100% grid grid-cols-2 h-96 text-white">
       <div className="">
-      <h2 className="">Hello, I am</h2>
-        <h1 className=" text-lime-400 text-4xl">()=&#62; &#123; Teerapong &#125;</h1>
+        <h2 className="">Hello, I am</h2>
+
+        <h1 className="flex items-end text-lime-400 text-4xl">
+          &#123; Teerapong &#125;
+          <FcManager />
+        </h1>
         <h2>Fullstack Developer</h2>
         <p>Career switcher</p>
-        <p>I am learner  generation thailand #jsd4  </p>
-      </div>
-      <div className=" text-white grid justify-items-center ">
-        <img src={ImgProfile} className="w-60"/>
-      </div>
-      <div className="">
-        <h1 className=" text-lime-400 text-3xl">aboutMe&#40; &#41;</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus hic molestias ipsam perferendis. Vitae voluptate totam at. Vero repellendus animi, omnis quae saepe, neque officia totam, officiis nobis labore modi veniam cum obcaecati aperiam asperiores dolorem magnam eius explicabo.</p>
+        <p>I am learner generation thailand #jsd4 </p>
+        <div className=" mt-10">
+          <h1 className="flex items-end text-lime-400 text-3xl">
+            AboutMe&#40; <FcNews /> &#41;
+          </h1>
+          <p>
+            I am a learner from Generation's Junior Software Developer Bootcamp
+            looking for a full-stack developer position. Previously, I had
+            experience Having worked on IP-phones for 7 years, I am experienced
+            in teamwork and working well under pressure. I am excited that will
+            bring experience and knowledge from the Generation's Junior Software
+            Developer Bootcamp project to create good works and develop even
+            better in the future.
+          </p>
+        </div>
       </div>
 
+      <div className=" flex justify-center items-center">
+        <div className="avatar">
+          <div class="load">
+            <img src={reactIcon} />
+            <img src={cssIcon} />
+            <img src={javascriptIcon} />
+            <img src={nodejsIcon} />
+          </div>
+          <img src={ImgProfile} id="profile" className="" />
+        </div>
+      </div>
     </div>
   );
 };

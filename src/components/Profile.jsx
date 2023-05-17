@@ -37,7 +37,7 @@ const Profile = () => {
 
       <div className=" flex justify-center items-center">
         <div className="avatar">
-          <div class="load">
+          <div className="load">
             <img src={reactIcon} />
             <img src={cssIcon} />
             <img src={javascriptIcon} />

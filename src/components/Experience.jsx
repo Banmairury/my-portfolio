@@ -50,7 +50,7 @@ const Experience = () => {
             </li>
             <li className="flex items-center">
               <FcProcess />
-              Create a database with sql(MySql) and nosql (mongodb)
+              Create a database with sql(SQLite) and nosql (mongodb)
             </li>
           </ul>
         </div>

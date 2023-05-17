@@ -4,7 +4,7 @@ import html5 from "../images/html5.png"
 import javascript from "../images/javascript.png"
 import react from "../images/react.png"
 import nodejs from "../images/nodejs.png"
-import mysql from "../images/mysql.png"
+import mysql from "../images/SQLite370.svg.png"
 import mongodb from "../images/mongodb.png"
 
 const SkillMe = () => {
@@ -18,7 +18,7 @@ const SkillMe = () => {
       <img className=" h-20 w-20 rounded-lg" src={javascript}/>
       <img className=" h-20 w-20" src={react}/>
       <img className=" h-20 w-20" src={nodejs}/>
-      <img className=" h-20 w-20 rounded-lg" src={mysql}/>
+      <img className=" h-20 w-20 rounded-lg bg-white" src={mysql}/>
       <img className=" h-20 w-20 rounded-lg" src={mongodb}/>
 
     </div>

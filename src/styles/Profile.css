@@ -4,7 +4,7 @@
 	width: 330px;
 	height: 330px;
 	box-sizing: border-box;
-	border: 5px white solid;
+	/* border: 5px white solid; */
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -31,7 +31,7 @@
   width:220px;
   height:220px;
 }
-.load img{border:0;margin:0;width:25%;height:25%;position:absolute;border-radius:50%;animation:spin 4s ease infinite}
+.load img{border:0;margin:0;width:25%;height:25%;position:absolute;border-radius:50%;animation:spin 4s ease infinite;box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);}
 
 .load :first-child{background:none;animation-delay:-3s}
 .load :nth-child(2){background:none;animation-delay:-2s}
@@ -39,10 +39,10 @@
 .load :last-child{background:none}
 
 @keyframes spin{
-  0%,100%{transform:translate(-35%)}
-  25%{transform:translate(330%)}
-  50%{transform:translate(330%, 330%)}
-  75%{transform:translate(-35%, 330%)}
+  0%,100%{transform:translate(-95%,160%)}
+  25%{transform:translate(130%,-110%)}
+  50%{transform:translate(380%, 170%)}
+  75%{transform:translate(120%, 260%)}
 }
 
 #profile{

@@ -17,14 +17,14 @@ const Navbar = () => {
         </a>
       </div>
       <div className="flex">
-        <a href="#">
+        <a href="https://www.linkedin.com/in/b-teerapong" target="_blank">
           <button className=" text-lg flex items-center justify-center w-40 h-10 rounded-lg hover:bg-sky-700 gap-2">
             <AiFillLinkedin />
             Linkedin
           </button>
         </a>
         <a
-          href="#"
+          href="https://github.com/Banmairury" target="_blank"
           className=" text-lg flex items-center justify-center w-40 h-10 rounded-lg hover:bg-orange-700 gap-2"
         >
           <AiOutlineGithub />

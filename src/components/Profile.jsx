@@ -16,14 +16,14 @@ const Profile = () => {
           &#123; Teerapong &#125;
           <FcManager />
         </h1>
-        <h2>Fullstack Developer</h2>
-        <p>Career switcher</p>
-        <p>I am learner generation thailand #jsd4 </p>
+        <h2 className="text-gray-200 text-lg">Fullstack Developer</h2>
+        <p className="text-gray-200 text-lg">Career switcher</p>
+        <p className="text-gray-200 text-lg">I am learner generation thailand #jsd4 </p>
         <div className=" mt-10">
           <h1 className="flex items-end text-lime-400 text-3xl">
             AboutMe&#40; <FcNews /> &#41;
           </h1>
-          <p>
+          <p className=" w-9/12 text-gray-300 text-lg">
             I am a learner from Generation's Junior Software Developer Bootcamp
             looking for a full-stack developer position. Previously, I had
             experience Having worked on IP-phones for 7 years, I am experienced

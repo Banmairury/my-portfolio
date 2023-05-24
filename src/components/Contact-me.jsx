@@ -3,14 +3,42 @@ import linkin from "../images/linkin.png";
 import line from "../images/line.png";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import Swal from "sweetalert2";
+import nycscar from '../images/CoarseOne.gif'
 
 const ContactMe = () => {
-  const form = useRef();
+  const form = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const formData = new FormData(form.current);
+    const fromName = formData.get("from_name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    if (!fromName) {
+      Swal.fire({
+        icon: "warning",
+        text: "Please enter your name",
+      });
+      return;
+    }
+    if (!email) {
+      Swal.fire({
+        icon: "warning",
+        text: "Please enter your email",
+      });
+      return;
+    }
+    if (!message) {
+      Swal.fire({
+        icon: "warning",
+        text: "Please enter your message",
+      });
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -22,12 +50,24 @@ const ContactMe = () => {
       .then(
         (result) => {
           console.log(result.text);
+          Swal.fire({
+            title: `<p >Thank you for your attention.</p>  <p>I will reply as soon as possible.</p> `,
+            width: 575,
+            padding: '3em',
+            color: '#009940',
+            textShadow: '4px 4px 4px black',
+            background: `#fff url(${nycscar})`,
+            //backgroundSize: '100% auto'
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat'
+          })
         },
         (error) => {
           console.log(error.text);
         }
       );
     e.target.reset();
+    // form.current.reset();
   };
 
   return (
@@ -85,22 +125,13 @@ const ContactMe = () => {
             className="bg-transparent text-xl text-yellow-500 text-clip "
             placeholder="How we can help you?"
           />
-          <Popup
-            trigger={
-              <button
-                type="submit"
-                className=" text-white rounded-full text-xl bg-blue-500 h-12 w-45 hover:-translate-y-1 ease-out duration-300"
-              >
-                Send Message
-              </button>
-            }
-            position="right center"
+
+          <button
+            type="submit"
+            className=" text-white rounded-full text-xl bg-blue-500 h-12 w-45 hover:-translate-y-1 ease-out duration-300"
           >
-            <div>
-              Thank you for your interest. I will contact you back as soon as
-              possible.{" "}
-            </div>
-          </Popup>
+            Send Message
+          </button>
         </form>
       </div>
     </div>

@@ -6,6 +6,8 @@ import react from "../images/react.png"
 import nodejs from "../images/nodejs.png"
 import mysql from "../images/SQLite370.svg.png"
 import mongodb from "../images/mongodb.png"
+import bootstrap from "../images/bootstrap-logo-shadow.png"
+import Tailwind from "../images/Tailwind_CSS_Logo.svg.png"
 
 const SkillMe = () => {
   return (
@@ -15,11 +17,14 @@ const SkillMe = () => {
       <img className=" h-20 w-20" src={figma}/>
       <img className=" h-20 w-20" src={html5}/>
       <img className=" h-20 w-20" src={css3}/>
+      <img className=" h-20 w-24" src={bootstrap}/>
       <img className=" h-20 w-20 rounded-lg" src={javascript}/>
       <img className=" h-20 w-20" src={react}/>
       <img className=" h-20 w-20" src={nodejs}/>
       <img className=" h-20 w-20 rounded-lg bg-white" src={mysql}/>
       <img className=" h-20 w-20 rounded-lg" src={mongodb}/>
+      <img className=" h-20 w-20 rounded-lg  bg-white" src={Tailwind}/>
+      
 
     </div>
     </div>

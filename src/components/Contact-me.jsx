@@ -94,7 +94,7 @@ const ContactMe = () => {
                 src={linkin}
               />
             </a>
-            <a href="https://line.me/ti/p/~budbeer" target="_blank">
+            <a href="https://line.me/ti/p/~tp.beer" target="_blank">
               <img
                 className="w-16 h-16 hover:-translate-y-3 ease-out duration-300"
                 src={line}

@@ -9,7 +9,7 @@ const Project = () => {
       <div className="h-60  flex justify-around items-center">
         <div className=" bg-gray-400 w-60 h-40 rounded-lg text-center text-xl hover:-translate-y-3 ease-out duration-300 hadow-lg hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] "> <a href='https://replit.com/@TeerapongB/JSD0452-Find-Your-Hat' target='blank'><img className='rounded-lg w-60 h-40' src={project0}></img></a></div>
         <div className=" bg-gray-400 w-60 h-40 rounded-lg text-center text-xl hover:-translate-y-3 ease-out duration-300 hadow-lg hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"> <a href='https://career-changer-react-assessment-banmairury.vercel.app/' target='blank'><img className='rounded-lg w-60 h-40' src={project1}></img></a></div>
-        <div className=" bg-gray-400 w-60 h-40 rounded-lg text-center text-xl hover:-translate-y-3 ease-out duration-300 hadow-lg hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"> <a href='http://128.199.131.246:5173' target='blank'><img className='rounded-lg w-60 h-40' src={project3}></img></a></div>
+        <div className=" bg-gray-400 w-60 h-40 rounded-lg text-center text-xl hover:-translate-y-3 ease-out duration-300 hadow-lg hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"> <a href='https://gaintrack.online' target='blank'><img className='rounded-lg w-60 h-40' src={project3}></img></a></div>
         
       </div>
     </div>
